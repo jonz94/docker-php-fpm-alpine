@@ -35,4 +35,5 @@ RUN set -ex \
     && pecl install redis-5.0.2 \
     && docker-php-ext-enable redis \
     # Clean up
-    && apk del .build-deps
+    && apk del .build-deps \
+    && rm -fr /tmp/pear
