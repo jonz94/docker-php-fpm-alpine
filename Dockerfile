@@ -31,5 +31,8 @@ RUN set -ex \
     && apk add --update --no-cache --virtual .memcached-runtime-deps libmemcached-libs zlib \
     && pecl install memcached-3.1.3 \
     && docker-php-ext-enable memcached \
+    # Install redis
+    && pecl install redis-5.0.2 \
+    && docker-php-ext-enable redis \
     # Clean up
     && apk del .build-deps
