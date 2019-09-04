@@ -28,6 +28,7 @@ imagick
 json
 libxml
 mbstring
+memcached
 mysqli
 mysqlnd
 openssl
@@ -39,6 +40,7 @@ pdo_sqlite
 Phar
 posix
 readline
+redis
 Reflection
 session
 SimpleXML
