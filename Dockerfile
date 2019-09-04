@@ -1,4 +1,4 @@
-FROM php:7.3.8-fpm-alpine3.10
+FROM php:7.3.9-fpm-alpine3.10
 
 LABEL maintainer="jonz94 <jody16888@gmail.com>"
 
@@ -31,9 +31,11 @@ RUN set -ex \
     && apk add --update --no-cache --virtual .memcached-runtime-deps libmemcached-libs zlib \
     && pecl install memcached-3.1.3 \
     && docker-php-ext-enable memcached \
+    \
     # Install redis
     && pecl install redis-5.0.2 \
     && docker-php-ext-enable redis \
+    \
     # Clean up
     && apk del .build-deps \
     && rm -fr /tmp/pear
