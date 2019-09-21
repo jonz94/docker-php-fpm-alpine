@@ -16,6 +16,7 @@ RUN set -ex \
         opcache \
         pcntl \
         pdo_mysql \
+        sockets \
     \
     # Install zip
     && apk add --update --no-cache --virtual .zip-runtime-deps libzip-dev \
