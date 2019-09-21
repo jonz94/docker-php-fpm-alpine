@@ -12,7 +12,6 @@ Docker Alpine image for PHP FastCGI Process Manager, with extra PHP extensions i
 ```console
 $ php -m
 
-[PHP Modules]
 bcmath
 Core
 ctype
@@ -44,6 +43,7 @@ redis
 Reflection
 session
 SimpleXML
+sockets
 sodium
 SPL
 sqlite3
