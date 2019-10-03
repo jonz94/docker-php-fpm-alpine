@@ -28,11 +28,6 @@ RUN set -ex \
     && pecl install imagick-3.4.4 \
     && docker-php-ext-enable imagick \
     \
-    # Install memcached
-    && apk add --update --no-cache --virtual .memcached-runtime-deps libmemcached-libs zlib \
-    && pecl install memcached-3.1.3 \
-    && docker-php-ext-enable memcached \
-    \
     # Install redis
     && pecl install redis-5.0.2 \
     && docker-php-ext-enable redis \
