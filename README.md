@@ -27,7 +27,6 @@ imagick
 json
 libxml
 mbstring
-memcached
 mysqli
 mysqlnd
 openssl
