@@ -29,7 +29,7 @@ RUN set -ex \
     && docker-php-ext-enable imagick \
     \
     # Install redis
-    && pecl install redis-5.0.2 \
+    && pecl install redis-5.1.1 \
     && docker-php-ext-enable redis \
     \
     # Clean up
