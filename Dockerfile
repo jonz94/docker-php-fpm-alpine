@@ -20,7 +20,6 @@ RUN set -ex \
     \
     # Install zip
     && apk add --update --no-cache --virtual .zip-runtime-deps libzip-dev \
-    && docker-php-ext-configure zip --with-libzip=/usr/include \
     && docker-php-ext-install zip \
     \
     # Install imagick
