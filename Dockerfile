@@ -1,4 +1,4 @@
-FROM php:7.4.0-fpm-alpine3.10
+FROM php:7.4.1-fpm-alpine3.10
 
 LABEL maintainer="jonz94 <jody16888@gmail.com>"
 
