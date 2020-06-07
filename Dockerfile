@@ -31,6 +31,9 @@ RUN set -ex \
     && pecl install redis-5.2.2 \
     && docker-php-ext-enable redis \
     \
+    # Install ffmpeg
+    && apk add --update --no-cache ffmpeg \
+    \
     # Clean up
     && apk del .build-deps \
     && rm -fr /tmp/pear
