@@ -28,7 +28,7 @@ RUN set -ex \
     && docker-php-ext-enable imagick \
     \
     # Install redis
-    && pecl install redis-5.2.2 \
+    && pecl install redis-5.3.1 \
     && docker-php-ext-enable redis \
     \
     # Install ffmpeg
