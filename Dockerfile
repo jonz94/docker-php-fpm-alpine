@@ -22,6 +22,10 @@ RUN set -ex \
     && apk add --update --no-cache --virtual .zip-runtime-deps libzip-dev \
     && docker-php-ext-install zip \
     \
+    # install postgresql
+    && apk add --update --no-cache --virtual .postgresql-runtime-deps postgresql-dev \
+    && docker-php-ext-install pgsql pdo_pgsql \
+    \
     # Install imagick
     && apk add --update --no-cache --virtual .imagick-runtime-deps imagemagick \
     && pecl install imagick-3.4.4 \
